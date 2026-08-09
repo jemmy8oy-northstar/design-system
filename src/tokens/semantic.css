@@ -37,6 +37,9 @@
  *   --color-surface          card / panel surface
  *   --color-surface-sunken   inset areas (e.g. input wells)
  *   --color-surface-hover    surface hover state
+ *   --color-neutral-subtle   neutral tinted fill; unlike -sunken it must stay
+ *                            legible on BOTH bg and surface (dark modes lift
+ *                            with a translucent overlay rather than darken)
  * Borders
  *   --color-border           default hairline
  *   --color-border-strong    emphasised / focused control border

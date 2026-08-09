@@ -15,6 +15,7 @@
   --color-surface: #ffffff;
   --color-surface-sunken: #f1f3f6;
   --color-surface-hover: #eef1f5;
+  --color-neutral-subtle: #eceff4;
 
   --color-border: #e2e6ec;
   --color-border-strong: #cbd2dc;
@@ -58,6 +59,7 @@
   --color-surface: #161b25;
   --color-surface-sunken: #0d1017;
   --color-surface-hover: #1f2634;
+  --color-neutral-subtle: rgba(226, 232, 240, 0.1);
 
   --color-border: #262e3d;
   --color-border-strong: #38425538;

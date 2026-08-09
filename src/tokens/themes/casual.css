@@ -16,6 +16,9 @@
   --color-surface-sunken: var(--warm-100);
   --color-surface-hover: var(--warm-100);
 
+  /* Neutral tint — must read on both bg and surface, like the other -subtle roles */
+  --color-neutral-subtle: var(--warm-100);
+
   /* Borders */
   --color-border: var(--warm-200);
   --color-border-strong: var(--warm-300);
@@ -65,6 +68,10 @@
   --color-surface: var(--warm-900);
   --color-surface-sunken: var(--warm-950);
   --color-surface-hover: var(--warm-800);
+
+  /* On dark you cannot go darker than the page, so the neutral tint lifts
+     instead: a warm translucent overlay reads on bg AND on a card surface. */
+  --color-neutral-subtle: rgba(243, 239, 234, 0.1);
 
   --color-border: var(--warm-800);
   --color-border-strong: var(--warm-700);
