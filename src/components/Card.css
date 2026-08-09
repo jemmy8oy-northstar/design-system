@@ -1,0 +1,28 @@
+.ds-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-surface);
+  color: var(--color-text);
+  transition: var(--transition-control);
+}
+
+.ds-card--padded {
+  padding: var(--space-6);
+}
+
+.ds-card--flat {
+  box-shadow: none;
+}
+
+.ds-card--raised {
+  box-shadow: var(--shadow-md);
+}
+
+.ds-card--interactive {
+  cursor: pointer;
+}
+.ds-card--interactive:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
