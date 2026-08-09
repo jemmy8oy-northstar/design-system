@@ -1,0 +1,102 @@
+/* Showcase-only layout. The component styling all comes from the design-system
+   tokens; this file just arranges the demo page. */
+
+body {
+  margin: 0;
+}
+
+.sc-page {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.sc-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-8);
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sc-brand {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+}
+.sc-brand span {
+  color: var(--color-text-muted);
+  font-weight: var(--weight-semibold);
+}
+
+.sc-switches {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+.sc-switches label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+.sc-switches select {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-control);
+  padding: var(--space-1) var(--space-2);
+  font-family: var(--font-text);
+}
+
+.sc-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-10) var(--space-8) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.sc-section h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  margin: 0 0 var(--space-5);
+}
+.sc-section h3 {
+  font-size: var(--text-lg);
+  margin: 0 0 var(--space-2);
+}
+
+.sc-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.sc-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 360px;
+}
+
+.sc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-5);
+}
+
+.sc-muted {
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-4);
+}
