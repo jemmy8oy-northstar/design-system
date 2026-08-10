@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Badge, Button, Card, Input } from '../src';
 
-type Theme = 'casual' | 'professional';
+type Theme = 'casual' | 'studio' | 'professional';
 type Mode = 'light' | 'dark';
 
-const THEMES: Theme[] = ['casual', 'professional'];
+const THEMES: Theme[] = ['casual', 'studio', 'professional'];
 const MODES: Mode[] = ['light', 'dark'];
 
 /** Read `?theme=&mode=` so Playwright can screenshot each combination deterministically. */

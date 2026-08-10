@@ -47,6 +47,26 @@
   --warm-900: #201d1a;
   --warm-950: #14120f;
 
+  /* ---- Colour: graphite (cool near-neutrals, for tool/editor themes) ------
+     Deliberately low-chroma and slightly blue: chrome around video or charts
+     must not tint the content it frames, which is why every editor UI is grey.
+     Kept as a second neutral ramp rather than replacing warm grey — the two
+     neutrals are most of what makes casual and studio read as different. */
+  --graphite-0: #ffffff;
+  --graphite-50: #f5f6f8;
+  --graphite-100: #e9ebef;
+  --graphite-200: #d7dae1;
+  --graphite-300: #b6bbc6;
+  --graphite-400: #878e9c;
+  --graphite-500: #636a78;
+  --graphite-600: #4a505c;
+  --graphite-700: #353a44;
+  --graphite-800: #24272e;
+  --graphite-850: #1c1f25;
+  --graphite-900: #15171c;
+  --graphite-950: #0e0f13;
+  --graphite-1000: #08090c;
+
   /* ---- Colour: functional (amber warning, warm red danger) --------------- */
   --amber-100: #fdecc8;
   --amber-500: #f5a524;
@@ -69,6 +89,7 @@
   --space-16: 4rem; /*   64 */
 
   /* ---- Radius (rounded, friendly — 10–14px is the everyday range) -------- */
+  --radius-xs: 4px; /* tool-UI corner; barely rounded, reads precise */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
@@ -79,6 +100,12 @@
   --font-display: 'Nunito', system-ui, -apple-system, sans-serif; /* rounded-humanist */
   --font-text: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* Tool-UI families (studio). A grotesk display with real character, a neutral
+     workhorse for dense UI, and a mono whose figures line up in a timecode. */
+  --font-grotesk: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-plex: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+  --font-plex-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
