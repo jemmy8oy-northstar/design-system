@@ -13,7 +13,7 @@ change.
 
 | App | Theme | Mode | Rung | Version | Adopted | Notes |
 | --- | ----- | ---- | ---- | ------- | ------- | ----- |
-| _(showcase — this repo)_ | `casual`, `professional` | both | L3 | `main` | 2026-08-09 | Not an app; the visual review surface. Always on `main`, by construction. |
+| _(showcase — this repo)_ | all | both | L3 | `main` | 2026-08-09 | Not an app; the visual review surface. Always on `main`, by construction. |
 
 No product app has adopted yet. Planned order (claude-code-bot#53): **snip-it →
 balenthiran.co.uk → web-template → the rest**, one at a time, each merged before
@@ -96,15 +96,22 @@ hits the friction first.
 
 ## Themes
 
-| Theme | Voice | Status |
-| ----- | ----- | ------ |
-| `casual` | Warm, friendly, calm-productive. Coral primary, teal positive. | light + dark, complete |
-| `professional` | Restrained indigo on cool slate. | stub — proves the swap, not finished |
+| Theme | Voice | Default mode | Status |
+| ----- | ----- | ------------ | ------ |
+| `casual` | Warm, friendly, calm-productive. Warm sand neutrals, soft shadows, rounded. | light | complete |
+| `studio` | Tool voice — cool graphite, hairlines, tight geometry, technical type. Same coral/teal accents. | **dark** | complete (PR #3) |
+| `professional` | Restrained indigo on cool slate. | light | stub — proves the swap, not finished |
+
+`studio` is dark-first: its bare `[data-theme='studio']` block *is* the dark
+theme and `[data-mode='light']` is the opt-out. Every other theme is the other
+way round. A consumer that renders a theme without setting `data-mode` gets that
+theme's default, which is the intended behaviour, not a bug to normalise away.
 
 Adding a theme is one file filling the role contract in
 `src/tokens/semantic.css`, plus one import in `src/tokens/index.css`. No
-component changes, and every L1 consumer inherits it. Proposed but not built:
-a dark-first **`studio`** theme for video/editor tools (claude-code-bot#53).
+component changes, and every L1 consumer inherits it. A theme may also override
+the shape and type roles (`--radius-*`, `--font-ui`/`-heading`/`-numeric`) —
+geometry and type are most of what separates one theme's voice from another's.
 
 **A consumer picks exactly one theme.** If an app wants a role value the theme
 doesn't provide, that is a gap in the role contract — fix it here so every
