@@ -21,11 +21,12 @@
       "require": "./dist/index.cjs"
     },
     "./styles.css": "./dist/design-system.css",
-    "./tokens.css": "./dist/design-system.css"
+    "./tokens.css": "./dist/tokens.css"
   },
   "scripts": {
     "dev": "vite --config vite.showcase.config.ts",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run build:tokens",
+    "build:tokens": "node scripts/build-tokens.mjs",
     "build:showcase": "vite build --config vite.showcase.config.ts",
     "preview": "vite preview --config vite.showcase.config.ts",
     "lint": "eslint .",
