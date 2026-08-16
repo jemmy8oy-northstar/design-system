@@ -9,7 +9,7 @@
 [data-theme] {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: var(--font-text);
+  font-family: var(--font-ui);
   font-size: var(--text-base);
   line-height: var(--leading-normal);
   -webkit-font-smoothing: antialiased;
@@ -23,7 +23,7 @@
 }
 
 [data-theme] :where(h1, h2, h3, h4) {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-weight: var(--weight-bold);
   line-height: var(--leading-tight);
   margin: 0;

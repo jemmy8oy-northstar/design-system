@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 // Every theme/mode pairing renders the full component set. Each case captures a
 // full-page screenshot for visual review and asserts the system actually
 // mounted (guards against a blank page / token or import regression).
-const THEMES = ['casual', 'professional'] as const;
+const THEMES = ['casual', 'studio', 'professional'] as const;
 const MODES = ['light', 'dark'] as const;
 
 for (const theme of THEMES) {
