@@ -2,5 +2,6 @@
 @import './primitives.css';
 @import './semantic.css';
 @import './themes/casual.css';
+@import './themes/studio.css';
 @import './themes/professional.css';
 @import './base.css';
