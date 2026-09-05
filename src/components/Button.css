@@ -15,7 +15,9 @@
 }
 
 .ds-button:disabled {
-  opacity: 0.5;
+  background-color: var(--color-surface-sunken);
+  color: var(--color-text-muted);
+  border-color: var(--color-border);
   cursor: not-allowed;
 }
 
